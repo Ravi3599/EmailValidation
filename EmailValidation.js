@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 let mail = prompt("Enter mail id to validate : ");
-const mailRegex= RegExp("^[abc]+[A-Za-z.]*@[bridgelabz].[co][a-zA-Z.]*")
+const mailRegex= RegExp("[a-zA-Z]*[@]{1}[bridgelabz][.a-z]*$");
 function validateMail(mail){
     if(mailRegex.test(mail)){
         console.log("Mail is is valid");
